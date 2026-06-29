@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tut_app/presentation/color_manager.dart';
+import 'package:tut_app/presentation/resources/color_manager.dart';
+import 'package:tut_app/presentation/resources/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
   //Named constructor
@@ -17,6 +18,10 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp.router(
+      // routerConfig: routerConfig,
+      debugShowCheckedModeBanner: false,
+      theme: getApplicationTheme(),
+    );
   }
 }

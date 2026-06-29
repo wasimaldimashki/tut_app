@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tut_app/presentation/font_manager.dart';
+import 'package:tut_app/presentation/resources/font_manager.dart';
 
 //** Prinmary Private Function **/
 TextStyle _getTextStyle({
